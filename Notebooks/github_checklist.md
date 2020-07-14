@@ -51,7 +51,7 @@ Merge branch 'master' of [link of remote repository]
 #
 ```
 
-then you can either first edit that default commit message on the first line or leave it as it is, but then you want to
+first you can either edit that default commit message on the first line or just leave it as it is, but then you want to:
 1. Hit the `esc` key to exit insert mode
 2. Type `:wq`
 	- `:` enters command mode
@@ -63,12 +63,12 @@ then you can either first edit that default commit message on the first line or 
 If you notice after running the commands for fetching updates and pushing that your fork still does not have the new files for the day...
 
 1. Check if your origin and upstream are correct by running `git remote -v`
-2. If upstream is set to your fork instead of the class repository you can fix that by running
+2. If upstream is set to your fork instead of the class repository you can fix that by running:
 	```
 	# Remove the current upstream
 	git remote rm upstream
 	# Add the correct upstream
 	git remote add upstream https://github.com/BeaverWorksMedlytics2020/Week[NUMBER]_Public
 	```
-3. Double check to make sure you're all set by running `git remote -v` again, reference the forking section to see what your origin and upstream should look like.
+3. Double check that you've updated your upstream by running `git remote -v` again.
 4. Now you should be able to start running the commands for keeping your fork up to date again starting with `git fetch upstream` etc.
