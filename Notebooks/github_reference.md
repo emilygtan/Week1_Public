@@ -1,4 +1,4 @@
-# Github Checklist
+# Github Reference
 
 ## Setting up your fork
 
